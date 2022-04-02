@@ -101,7 +101,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\MusicStoreEntities.cs" />
+    <Compile Include="Models\SampleData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -199,7 +202,9 @@
     <Content Include="Views\Store\Details.cshtml" />
     <Content Include="Views\Store\Browse.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
