@@ -11,9 +11,9 @@ namespace MusicStore.Controllers
         //
         // GET: /Store/
 
-        public string Index()
+        public ActionResult Index()
         {
-            return "Hello from Store.Index()";
+            return View();
         }
 
         public string Browse(string genre)
