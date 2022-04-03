@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using MusicStore.Models;
 
-namespace MusiscStore.Controllers
+namespace MusicStore.Controllers
 {
     public class AccountController : Controller
     {
