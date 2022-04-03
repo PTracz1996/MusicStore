@@ -126,5 +126,16 @@ namespace MusicStore.Models
             }
             return context.Session[CartSessionKey].ToString();
         }
+
+        public void MigrateCart(string userName)
+        {
+            var shoppingCart = storeDB.Carts.Where(c => c.CartId == ShoppingCartId);
+
+            foreach (Cart item in shoppingCart)
+            {
+                item.CartId = userName;
+            }
+            storeDB.SaveChanges();
+        }
     }
 }
